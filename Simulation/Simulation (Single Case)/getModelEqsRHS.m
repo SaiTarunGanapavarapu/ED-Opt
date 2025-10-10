@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% function:    ED_MemSim_SS_DAE_RHS(...)                                  %
+% function:    getModelEqsRHS(...)                                        %
 % Description: RHS function for differential and algebraic equation       %
 %                  system from Campione et al. (2019)                     %
 %                                                                         %
@@ -87,5 +87,6 @@ function [RHS] = getModelEqsRHS(z, stateVar, diffVar, algVar)
     RHS(6) = dcurr - currDens*memWidth;
     
 end
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
